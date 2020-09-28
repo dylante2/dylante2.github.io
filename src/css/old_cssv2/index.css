@@ -1,0 +1,276 @@
+*{
+	margins:0;
+	padding:0;
+	position:relative;
+	top:10px;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+
+header{
+	padding-left: 24.9%;
+}
+html{
+	display:table;
+	margin:auto;
+}
+
+h1{
+	font-size: 60px;
+	font-weight: normal;
+}
+
+p{
+	font-family: 'Roboto', serif;
+	font-size: 20px;
+}
+
+body{
+	display:table-cell;
+	vertical-align: middle;
+}
+
+.navbar{
+	padding-bottom: 5px;
+	font-family:'Roboto', sans-serif;
+	font-size: 28px;
+	/*color: #C25037;*/
+	color:black;
+}
+
+#current{
+	text-decoration: underline;
+	/*color:#0B3A42;*/
+	color:black;
+}
+
+nav ul li a:hover{
+	text-decoration: underline;
+	/*color: #C25037;*/
+	color:#0B3A42;
+}
+
+nav ul li a:visited{
+	/*color:#C25037;*/
+	color:#0B3A42;
+}
+
+nav ul li a:link{
+	 /*color:#C25037*/
+	 color: #0B3A42
+}
+
+
+.nav-bar-link{
+	display: inline-block;
+	text-align:justify;
+	margin-right:175px;
+}
+
+.social-link{
+	opacity: .5;
+	position:inherit;
+	left: 130px;
+}
+
+.fab{
+	color:#0b3a42;
+}
+
+.fas{
+	color:#0b3a42;
+}
+.social-link:hover{
+	opacity:1;
+}
+.intro{
+	/*display: block;*/
+	vertical-align: center;
+	width:60%;
+}
+
+.intro p{
+	text-align:center;
+}
+
+.time,.title,.description{
+	top:0px;
+}
+
+.time {
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.title{
+	display:block;
+	font-size:1.5rem;
+}
+
+.description{
+	display:block;
+	margin-top:5px;
+}
+
+
+.timeline ul li{
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #0B3A42;
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.timeline ul li div {
+  position: relative;
+  width: 400px;
+  padding: 15px;
+  background: 	#2DD881;
+}
+ 
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 20px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+ 
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #2DD881 transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -470px;
+}
+ 
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #2DD881;
+}
+
+.timeline ul li::after {
+  background: #2DD881;
+  transition: background .5s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+  border: 6px solid #0B3A42;
+  background: #2DD881;
+}
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px,0,0);
+}
+
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px,0,0);
+}
+
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -289px; /*250+45-6*/
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+   
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+   
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+   
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #0B3A42 transparent transparent;
+  }
+}
+
+#quote{
+	font-style: italic;
+	color:#2B3E42;
+}
+
+#plug{
+	top:0px; 
+	text-decoration: underline;
+}
+
+#plug:link{
+	color:#0B3A42;
+}
+
+#plug:hover{
+	background-color:#D8DBE2;
+
+}
+
+#myBtn {
+	font-family:'Roboto';
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  /*bottom: 20px;*/ /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border-color:#0B3A42; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #2DD881; /* Set a background color */
+  color: #0B3A42; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  margin-top:15px;
+  margin-bottom:15px;
+  top:0px;
+}
+
+#myBtn:hover {
+  background-color: #D8DBE2; /* Add a dark-grey background on hover */
+}

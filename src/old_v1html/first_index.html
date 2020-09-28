@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Nunito+Sans" rel="stylesheet">
+
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset = "utf-8">
+
+
+	<!-- Other shit -->
+	<link rel = "icon" type = "image/png" size = "16x16" href = "images/favicon.png">
+	<link rel = "stylesheet" href = "css/home.css">
+	
+	<!-- Title -->
+	<title> Zhengming (Ming) Wang </title>
+</head>
+
+<body>
+
+	<div class = "topnav">
+		<a> Projects </a>
+		<a> Work </a>
+		<a href = "about.html"> About </a>
+		<img src = "images/arrow.png" id = "arrow" alt="Click the logo to get back!"> 
+		<a id = "Logo" href = "#Welcome"> <img src = "Logo.PNG" alt = "Home"></a>
+		
+	</div>
+
+	<div id = "welcome" class = "intro">
+		<h1 id = "title" > Zhengming Wang </h1>
+		<h1 style="color: #e8f7f9"}> Hi! Call me Ming. </h1>
+		<p> I'm a <b>Computer Science</b> and Communications student at the <b>University of Pittsburgh.</b> </p> 
+		<p id = "under-construction"> HEY! This website is being totally changed. Check often for new updates. </p>
+		<!-- <p id = "under-construction"> I might not know much, BUT I do know that you should visit this website on your laptop, not phone. Sorry lol</p> -->
+
+		
+	</div>
+	<div id="quoteDisplay">
+	</div>
+	<script type = "text/javascript" language = "JavaScript">
+		var quotes = [
+			"Genius is 99% perspiration, 1% inspiration.",
+			"Get comfortable being uncomfortable.",
+			"Successful people are not gifted; they just work hard, then succeed on purpose.", 
+			"The secret to life is to take it a little bit less seriously.",
+			"The dream is free. The hustle is sold separately.",
+			"I'm gonna show you how great I am.",
+			"A ship in a harbor is safe, but that's not why ships are built.",
+			"Life's tough, but its tougher when you're stupid.",
+			"In three words I can sum up everything I've learned about life: it goes on.",
+			"Forgiveness means giving up all hope for a better past."
+		]
+		var randomNum = Math.floor(Math.random() * (quotes.length));
+		document.getElementById('quoteDisplay').innerHTML= quotes[randomNum];
+	</script> 
+
+	<div class = "links">
+		<h2 id = "promo"> Check me out! </h3>
+		<a href= "https://github.com/Zmwang622" class = "circle-link" id ="github"> GitHub </a>
+		<a href= "https://linkedin.com/in/Zhengmingwang" class = "circle-link" id ="linkedin"> LinkedIn </a>
+		<a href= "Zhengming Wang Resume.pdf" class = "circle-link" id ="resume"> Resume </a>
+	</div> 
+</body>
+
+</html>

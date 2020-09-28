@@ -1,0 +1,155 @@
+/*Home page's css*/
+/**{
+	margin:0;
+	padding:0;
+	font-family:'Eczar', serif;
+}*/
+.topnav{
+	background-color: white;
+	overflow: hidden;
+}
+
+.topnav a{
+  float: right;
+  color: #0b3a42;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover{
+	background-color: #D46137;
+	color:white;
+}
+
+.topnav a.active{
+	background-color: #C69580;
+	color:white;
+}
+
+#Logo{
+	float:left;
+	background-color: white;
+}
+
+
+
+body{
+	font-family: Nunito Sans, sans-serif;
+	text-align: center;
+	padding:0;
+	margin : 0;
+	background-color: #A3C1C8;
+}
+
+.intro{
+	top: 0;
+	color:#0b3a42;
+	min-height: 50vh;
+	padding-top: 10vh;
+	padding-bottom: 0vh; 
+	margin-bottom:0px;
+}
+
+.intro p{
+	color: white;
+	margin: 0;
+	padding:0;
+	/*#F8E6D6*/
+}
+
+.intro p b{
+	color: #fccfa7;
+}
+
+#under-construction{
+	color: red;
+}
+
+.links{
+	margin:0;
+	color: #0b3a42;
+	font-family: 'Major Mono Display', monospace;
+	padding:0;
+}
+
+.circle-link{
+	background-color: #AECAF9;
+	display: inline-block;
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	border: 2px solid #90C695;
+	line-height: 150px;
+	margin: 0px 40px 0px 40px;
+	font-size: 18px;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.circle-link:hover{
+	animation-name: gradient;
+	animation-duration: 1.5s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+}
+@keyframes gradient{
+	0%{
+		background: #AECAF9;
+	}
+
+	100%{
+		background-color: #4369AB;
+		color:white;
+	}
+}
+
+#promo{
+	font-family: Nunito Sans;
+	padding = 0;
+	margin = 0;
+}
+
+#title{
+	text-decoration: underline;
+	font-size: 36px;
+	color:block;
+}
+
+#arrow{
+	position: relative;
+	right: 420px;
+	top:15px;
+	width: 1.2%;
+	visibility: hidden;
+}
+
+
+nav ul {
+  text-align: right;
+  position: fixed;
+  width: 100%;
+  background-color: #e0ebe8;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 55px;
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+
+nav ul li a {
+  color: #008080;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: green;
+}
+
+#quoteDisplay{
+	margin:0;
+	padding:0;
+}

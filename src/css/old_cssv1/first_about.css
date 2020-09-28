@@ -1,0 +1,54 @@
+.topnav{
+	background-color: white;
+	overflow: hidden;
+}
+
+.topnav a{
+  float: right;
+  color: #0b3a42;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover{
+	background-color: #D46137;
+	color:white;
+}
+
+.topnav a.active{
+	background-color: #C69580;
+	color:white;
+}
+
+#Logo{
+	float:left;
+	background-color: white;
+}
+
+
+
+body{
+	font-family: Nunito Sans, sans-serif;
+	text-align: center;
+	padding:0;
+	margin : 0;
+	background-color: #A3C1C8;
+}
+
+#arrow{
+	position: relative;
+	right: 500px;
+	top:15px;
+	width: 1.2%;
+	visibility: visible;
+}
+
+
+
+#head_shot{
+	border-radius: 50%;
+	width:12%;
+	height:12%;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<html>
+<head>
+	<title> Zhengming Wang </title>
+	<link rel = "stylesheet" href = "css/index.css">
+	<link rel = "icon" type = "image/png" size = "16x16" href = "images/favicon.png">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+	<header>
+		<!-- Logo w/ github, linkedin, email, facebook buttons -->
+		<div class = "social-icons">
+			<a href = "index.html"> <img src="images/base_logo.png"> </a>
+			<a><i class="fas fa-envelope-square fa-3x social-link"></i></a>
+			<a href = "https://www.linkedin.com/in/zhengmingwang"><i class="fab fa-linkedin fa-3x social-link"></i></a>
+			<a href = "https://www.github.com/zmwang622"> <i class="fab fa-github-square fa-3x social-link"></i></a>
+		</div>
+
+		<!-- Next Line is nav bar. -->
+	 	<nav class = "navbar">
+	 		<ul>
+	 			<li class = "nav-bar-link"><a href = "about.html" id = 'current'> About Me </a></li>
+	 			<li class = "nav-bar-link"><a href = "Resume.pdf"> Resume</a></li>
+	 		<!-- 	<li class = "nav-bar-link"><a href ="http://zhengmingwang.pythonanywhere.com/"> Ma Blog</a></li> -->
+	 			<li class = "nav-bar-link"><a href = "project.html"> Projects </a></li>
+	 		</ul>
+	 	</nav>
+	 	<div class = "intro">
+	 		<p style = "font-size:175%">Hi! I'm Zhengming, but you can call me Ming. </p>
+	 		<p id = "quote">Thanks for dropping by! I'm currently studying CS at the University of Pittsburgh. Scroll down to learn about me, or check out some of my projects or resume. </p>
+	 		<!-- <p> No one said greatness was easy. Follow my journey and see for yourself how great I can be. </p> -->
+	 		<p style = "color:#2DD881; background: #0B3A42"><a href="comprehensiveAbout.html" style="top:0px;color:#2DD881;"> Click here for an extended version!</a> </p>
+	 	</div>
+	 </header>
+	 <section>
+	 	<div class = "timeline">
+			<ul>
+				<li><div><span class= "time"> May 2019</span> <span class = "title">Jane Street SEE</span>
+					<span class = "description">  Selected out of 2000 students (1.5% acceptance rate) to attend a 4-day educational event in NYC with Jane Street. I met many like-minded and driven students. Definitely one of the highlights of my freshman year.</span></div></li>
+				<li><div><span class= "time">May 2019</span> <span class = "title">Facet Lab @ Pitt LRDC</span>
+					<span class = "description">Continuing my work in Automated NLP systems this summer with Dr. Erin Walker. This time I'll be leading the development of an automatic help analyst (AHA) system. I can't wait to see how the project goes!</span></div></li>
+				<li><div><span class= "time">December 2018</span> <span class = "title">Litman Lab @ Pitt LRDC</span>
+					<span class = "description">  Joined Dr. Diane Litman's Automatic Essay Scoring project through Pitt's FER program. Learned a lot about Natural Language Processing and Machine Learning. Really thankful for the opportunity. </span></div></li>
+				<li><div><span class= "time">May 2018</span> <span class = "title">Essential Medical, Inc</span>
+					<span class = "description">  Worked at a local biomedical device startup summer after High School. Spent the majority of my time working on Crystal Reports and ERP implementation within the office, which was pretty boring. However, I loved working with the people there and doing the various odd tasks that working at startups brings. </span></div></li>
+				<li><div><span class= "time">February 2018</span> <span class = "title">University of Pittsburgh</span> 
+					<span class = "description"> After a onslaught of rejections, I committed to Pitt. One of the best decisions I have ever made. </span></div></li>
+				<li><div><span class= "time">September 2017</span> <span class = "title">AP Computer Science</span> 
+					<span class = "description"> Learned Java from an awesome teacher. Got a 5 on the exam, and learned to love programming.</span></div></li>
+				<li><div><span class= "time">September 2014 - August 2018</span> <span class = "title"> Great Valley High School </span>
+					<span class = "description">  Hit really high highs and really low lows during high school. Graduated top 25% of my class (not great), with a weighted GPA of 4.0 and a 1460 SAT and 33 ACT. Check out the <a id="plug" href = "comprehensiveAbout.html"> extended version</a> to learn how I raised my GPA from a 3.4 to 4.0 in two years. </span></div></li>
+				<li><div><span class= "time">June 2010</span> <span class = "title">Random Courses.</span> 
+					<span class = "description"> Took a "Web Dev" and a Scratch course at Summer Camp. The courses were pretty uninspiring, but I did mess around with Scratch after.</span></div></li>
+			</ul>
+			<br><br>
+		</div>
+		<button onclick="topFunction()" id="myBtn" title="Go back top">Top</button>
+	</section>
+	<script>
+		function isElementInViewport(el) {
+		  var rect = el.getBoundingClientRect();
+		  return (
+		    rect.top >= 0 &&
+		    rect.left >= 0 &&
+		    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+		    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+		  );
+		}
+
+		var items = document.querySelectorAll(".timeline li");
+		 
+		// code for the isElementInViewport function
+		 
+		function callbackFunc() {
+		  for (var i = 0; i < items.length; i++) {
+		    if (isElementInViewport(items[i])) {
+		      items[i].classList.add("in-view");
+		    }
+		  }
+		}
+		 
+		window.addEventListener("load", callbackFunc);
+		window.addEventListener("scroll", callbackFunc);		
+		
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		    document.getElementById("myBtn").style.display = "block";
+		  } else {
+		    document.getElementById("myBtn").style.display = "none";
+		  }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0; // For Safari
+		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}
+	</script>
+
+	
+</body>
+</html>

@@ -1,0 +1,176 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:'Roboto', serif;
+	color:#0b3a42;
+}
+
+.topnav{
+	background-color: white;
+	overflow: hidden;
+	margin:10px 25px 5px;
+}
+
+.topnav a{
+  float: right;
+  color: #0b3a42;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.75em;
+  vertical-align: middle;
+}
+
+.topnav a:hover{
+	color:black;
+	text-decoration: underline;
+}
+
+#current{
+	text-decoration: underline;
+}
+
+#Logo{
+	float:left;
+	background-color: white;
+}
+
+.page-body{
+	background-color:#f2f2f2;
+	margin:0px 25px 5px;
+	border-color: #0B3A42;
+	border-style: solid;
+}
+
+.title{
+	text-align: center;
+	font-size:2em;
+	font-weight: 600;
+}
+
+.text-body{
+	text-align:center;
+	font-size:1.2em;
+}
+
+.showcase-title{
+	margin:5px 25px 5px;
+	font-size:1.5em;
+	font-weight: 500;
+	text-decoration: none;
+}
+/*Horizontal Scroller yuh*/
+.project-showcase {
+  display: flex;
+  min-width:90%;
+  max-height: 300px;
+  overflow-x: auto;
+ }
+
+.project-showcase::-webkit-scrollbar {
+  	display: none;
+}
+ 
+.project-showcase::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #0b3a42; 
+    border-radius: 10px;
+}
+ 
+.project-showcase::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px #0b3a42; 
+}
+
+.card{
+    min-width: 300px;
+    min-height:auto;
+    margin:5px 22px 5px;
+    padding: 5px;
+	color: #34495e;
+    
+    text-align:center;
+    border: 2px solid #0B3A42;
+    /*background: url(https://www.designbolts.com/wp-content/uploads/2012/12/Washi-White-Seamless-Pattern-For-Website-Background.jpg) repeat;*/
+    /*background:url(https://images.homedepot-static.com/productImages/97bf6f6c-5b82-4bea-bd46-f624429f295c/svn/home-decorators-collection-bamboo-flooring-am1735e-64_1000.jpg) repeat;*/
+    background:#A9BCD0;
+    background:-webkit-radial-gradient(circle,white,#7da5ce);
+    cursor:pointer;
+}
+.card:hover{
+	box-shadow: 0px 3px 15px #2DD881;
+}
+.card img {
+  width: 250px;
+  height: 250px;
+  cursor:pointer;
+}
+
+.card-title{
+	font-weight: 900;
+	color:black;
+	top: 0px;
+	text-decoration: none;
+	cursor:pointer;
+}
+
+.modal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+	transform: scale(1.1);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 30rem;
+	border-radius: 0.5rem;
+}
+
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+	background-color: lightgray;
+}
+.close-button:hover {
+	background-color: darkgray;
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+ 	transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content p {
+	padding-bottom: 12px;
+	padding-top: 2px;
+}
+
+.grey_background {
+    background-color: #ffffff;
+    margin-top: 10px;
+    border-color: black;
+}
+
+.grey_background::hover {
+    color: #2c3e50;
+}
+
+.card-action{
+	
+}
