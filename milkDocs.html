@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang = "en">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<head>
+	<meta charset="utf-8">
+	<title> Milk Documentation </title>
+	<link rel = "stylesheet" href = "src\doc.css">
+</head>
+<body>
+	<main id = "main-doc">
+		<!-- Vertical Nav Bar -->
+		<nav id = "navbar">
+			<header> Milk Documentation </header>
+			<ul>
+				<li><a href = #Introduction>Introduction</a></li>
+				<li><a href = #what-you-should-know>What You Should Know</a></li>
+				<li><a href = #data-types>Data Types</a></li>
+				<li><a href = #logic-and-arithmetic-expressions>Expressions</a></li>
+				<li><a href = #statements>Statements</a></li>
+				<li><a href = #variables>Variables</a></li>
+				<li><a href = #control-flow-and-loops>Control Flow</a></li>
+				<li><a href = #functions>Functions</a></li>
+				<li><a href = #classes>Classes</a></li>
+			</ul>
+		</nav>
+		<!-- Introduction -->
+		<section class = "main-section" id = "introduction">
+			<header>Introduction</header>
+			<p>
+				I always wanted to make my own programming language. Senior year of HS, I first started to learn how to program and for our final project I jokingly said that my group and I should make our own language. Though we chose to make a game that didn't actually work, the idea stuck in my head.
+			</p>
+
+			<p>
+				Fast forward to my first year of college. After a successful first semester, I was set on working on my first real personal project (because that's supposedly what gets jobs.) With the help of this handy textbook and the fact that I spent 30 hours on the road during my winter break, I was able to bust out this nifty Java interpreter in around a month. Definitely piggybacked off that book alot but still learned a lot. The next semester a lot of what I read in the book came up in my classes and I felt pretty cool.
+			</p>	
+			
+			<p>
+				Also: I tried to add javadoc via Eclipse (because it's easier) and messed up the Java path thingies on my computer. Hopefully it still works via GitHub. Check out the source code <a href="https://github.com/Zmwang622/Milk-Lang-and-Interpreter">here</a>.
+			</p>
+		</section>
+		
+		<!-- What you should know -->
+		<section class = "main-section" id = "what-you-should-know">
+			<header>What you should know</header>
+			<ul>
+				<li> How to read and write English</li>
+				<li> Previous programming language is not required </li>
+				<li> Basic mathematical understanding</li>
+			</ul>
+		</section>
+		
+		<!-- Data Types -->
+		<section class = "main-section" id = "data-types">
+			<header>Data Types</header>
+			<p> There are four Data Types in Milk Lang. They are: </p>
+			<ul>
+				<li> Booleans: Values that indicate true or false </li>
+				<li> Numbers: Any numerical representation that you can think of. 1234 and 12.34 fall under the same roof in Milk Lang.</li>
+				<li> Strings: Any letter or word falls under the String Data Type. They are declared by "double quotes." </li>
+				<li> Nil: Indicates nothing. A zero. Null. </li>
+			</ul>
+		</section>
+		
+		<!-- Logic and Arithmetic Expressions -->
+		<section class = "main-section" id = "logic-and-artihmetic-expressions">
+			<header>Logic and Arithmetic Expressions</header>
+			<p> There are many different types of Expressions in Milk Lang.</p>
+			<p> Arithmetic Expression</p>
+			<code>
+add + this;
+subtract - me; 
+multiply * me;
+divide / this;
+-negateThis
+			</code>
+			<p> Comparison Expressions </p>
+			<code>
+less < than
+lessThan =< orEqual
+greater > than
+greaterThan >= orEqual
+				
+1==2;       //false
+"cat"!="dog";  //true
+//You can compare different types!
+314 == "pi"; //false
+123 == "123"; //false
+			</code>
+			<p> Logic Expressions</p>
+			<code>
+!true;  //false
+!false; //true
+true and false; //false
+true and true;  //true
+false or false; //false
+true or true;   //true
+				
+// Use () to change precedence
+var avg =  (min + max) / 2;
+			</code>
+		</section>
+		
+		<!-- Statements -->
+		<section class = "main-section" id = "statements">
+			<header>Statements</header>
+			<p> Statements produce an effect. The print statement is an example. You can pack a series of statements into brackets, {}.</p>
+			<code>
+{
+		print"One statement.";
+		print"Two statements.";
+}
+			</code>
+		</section>
+
+		<!-- Variables -->
+		<section class = "main-section" id = "variables">
+			<header>Variables</header>
+			<p>Variables store data. Like other languages, use = to initialize variables. Omitting the initializer defaults to nil. Because Milk is dynamically-typed there is only one key word for defining variables, <span class="code">var</span>. </p>
+			<code>
+var hello = "World";
+var alsoAVar;
+			</code>
+			
+			<p>Users can access and assign the values of variables by refering its name.</p>
+			<code>
+var breakfast = "bagels";
+print breakfast; // "bagels".
+breakfast = "beignets";
+print breakfast; // "beignets".
+			</code>
+		</section>	
+
+		<!-- Control Flow and Loops -->
+		<section class = "main-section" id = "control-flow-and-loops">
+			<header>Control Flow and Loops</header>
+			<p>Without the ability to skip code or execute code more than once, many languages would become useless. In Milk, the if, while, and for loop allow users to make powerful programs.</p>
+			<p>The if() statement executes one of two statemnts based on some condition</p>
+			<code>
+if(condition){
+	print "correct";
+}
+else{
+	print "wrong";
+}
+			</code>
+
+			<p> The while() loop executes the body repeatedly until the conditional expression is no longer true.</p>
+			<code>
+var a = 1;
+while (a < 10) {
+	print a;
+	a = a + 1;
+}
+			</code>
+
+			<p> The for() loop is a more "elegant" way of creating a while loop. </p>
+			<code>
+for (var a = 1; a < 10; a = a + 1) {
+		print a;
+}
+			</code>
+		</section>
+
+		<!-- Functions -->
+		<section class = "main-section" id = "functions">
+			<header>Functions</header>
+			<p> A function is a named section of code that performs a certain task. In Milk they can be run with or without arguments and look just like Java's function calls. </p>
+			<code>
+doThing()
+build(brick, clay)
+			</code>
+			<p> To declare a function, use the keyword <span class="code">ming</span>...LOL.</p>
+			<code>
+// No I'm not joking.
+ming printSum(a,b)
+{
+		print a + b;
+}
+			</code>
+			<p> In Milk, functions are first class, meaning they work just like real values. Imagine function pointers in C. </p>
+			<code>
+ming addPair(a, b) {
+	return a + b;
+}
+			
+br>ming identity(a) {
+		return a;
+}
+			
+			print identity(addPair)(1, 2); // Prints "3".
+			</code>
+			<p> Functions can be declared within functions. It's a very cool feature, shout-out to Bob Nystrom. </p>
+			<code>
+ming returnFunction() {
+	var outside = "outside"; 
+				  
+		ming inner() {
+			print outside;
+		}
+				  
+		return inner;
+}
+				
+var woah = returnFunction();
+fn();
+			</code>
+		</section>
+
+		<!-- Classes -->
+		<section class = "main-section" id = "classes">
+			<header>Classes</header>
+			<p>Milk is an OOP language</p>
+			<code>
+class Breakfast {
+		cook() {
+			print "Eggs a-fryin'!";
+		}
+				  
+		serve(who) {
+			print "Enjoy your breakfast, " + who + ".";
+		}
+}
+				
+// Store it in variables.
+var someVariable = Breakfast;
+				
+// Pass it to functions.
+someFunction(Breakfast);
+
+// Print it 
+print someVariable; // "Breakfast instance"
+			</code>
+			<p> For Instances and Initialization, use init() to create a construction-sorta-thing. </p>
+			<code>
+class Breakfast {
+		init(meat, bread) {
+				 this.meat = meat;
+				 this.bread = bread;
+			}
+}
+ // ...
+				
+var baconAndToast = Breakfast("bacon", "toast");
+baconAndToast.serve("Dear Reader");
+			</code>
+			<p> For Inheritance, use <span class="code"> subClass < superClass </span> </p>
+			<code>
+class Brunch < Breakfast {
+		drink() {
+			print "How about a Blood Mary?";
+		}
+}
+			</code>
+			<p>In the above example Brunch is the subclass and thus is able to use any of Breakfast's methods. But when Brunch calls drink() the output is different than what Breakfast would output.</p>
+		</section>
+	</main>
+</body>
