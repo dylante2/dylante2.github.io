@@ -520,6 +520,7 @@ i {
     background: -moz-radial-gradient(circle, #2c3e50, #1a1a1a);
     background: -ms-radial-gradient(circle, #2c3e50, #1a1a1a);
     background-size: auto auto;
+    height: 100px
 }
 
 .tooltipped {
