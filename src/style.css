@@ -520,7 +520,6 @@ i {
     background: -moz-radial-gradient(circle, #2c3e50, #1a1a1a);
     background: -ms-radial-gradient(circle, #2c3e50, #1a1a1a);
     background-size: auto auto;
-    height: 600px
 }
 
 .tooltipped {
@@ -530,6 +529,7 @@ i {
 .footer-copyright {
     color: #fff !important;
     font-size: 16px;
+    height: 50px
 }
 
 #windsor-image {
